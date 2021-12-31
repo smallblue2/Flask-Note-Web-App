@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.noteli {
+    margin: 5px 0px;
+    padding: 10px;
+    border-bottom: 2px solid #9d9d9d;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    overflow: visible;
+}
+
+.navbar ul li {
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 53px;
+    background-color: #262626;
+}
+
+.navbar ul li a {
+    padding: 15px;
+    display: block;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar ul li a:hover {
+    background-color: #ffffff;
+    color: #a9a9a9
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 30px;
+    width: 80vw;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+input {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 20px 0 10px 0;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 20%;
+    margin: 10px 0 0 0;
+    border: 2px solid #262626;
+    border-radius: 5px;
+    background-color: #262626;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.success {
+    background-color: #2cc42c;
+}
+
+.danger {
+    background-color: #c02d2d;
+}
+
+.alert {
+    text-align: center;
+    height: 30px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.alert-button {
+    height: 30px;
+    width: 30px;
+    background-color: inherit;
+    margin: auto auto;
+    border: 0;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: auto;
+}
+
+.alert-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+textarea {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    overflow: auto;
+    width: 100%;
+    height: 300px;
+}
+
+.close {
+    margin: 0;
+    display: inline;
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    float: right;
+}
