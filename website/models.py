@@ -1,16 +1,28 @@
-from website import DATABASE
+from . import db
 from flask_login import UserMixin
 from sqlalchemy.sql import func
 
-class Note(DATABASE.Model):
-    id = DATABASE.Column(DATABASE.Integer, primary_key=True)
-    data = DATABASE.Column(DATABASE.String(10000))
-    date = DATABASE.Column(DATABASE.DateTime(timezone=True), default=func.now())
-    user_id = DATABASE.Column(DATABASE.Integer, DATABASE.ForeignKey('user.id'))
+# Note model
+class Note(db.Model):
+    # Primary key
+    id = db.Column(db.Integer, primary_key=True)
+    # Text content
+    data = db.Column(db.String(10000))
+    # Date created
+    date = db.Column(db.DateTime(timezone=True), default=func.now())
+    # Foreign key to user
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 
-class User(DATABASE.Model, UserMixin):
-    id = DATABASE.Column(DATABASE.Integer, primary_key=True)
-    email = DATABASE.Column(DATABASE.String(150), unique=True)
-    password = DATABASE.Column(DATABASE.String(150))
-    first_name = DATABASE.Column(DATABASE.String(150))
-    notes = DATABASE.relationship('Note')
+
+# User model
+class User(db.Model, UserMixin):
+    # Primary key
+    id = db.Column(db.Integer, primary_key=True)
+    # Email field
+    email = db.Column(db.String(150), unique=True)
+    # password field
+    password = db.Column(db.String(150))
+    # first name field
+    first_name = db.Column(db.String(150))
+    # one to many relationship
+    notes = db.relationship('Note')
