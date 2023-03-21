@@ -1,10 +1,15 @@
-OLD PROJECT; Will update Christmas 2022.
-planning on coming back to clean-up, add commments and update project.
+## Flask-Note-Web-App
+My first web application - built from Flask and Jinja.
 
-# Flask-Note-Web-App
-My first web application built from Flask and Jinja.
+This is a simple web application I made in my first semester of my BsC Computer Science.
 
+It was my first venture into databases (SQLite), authentication, password hashing, routing and more, and made me realise my love of backend!
+I also got to practice some basic templating with Jinja, some traditional CSS and a tiny bit of javascript!
 
-This is my first venture into flask, and databases, authentication, password hashing, etc.
-Run it locally through running 'main.py'.
+## Installation & Running
+It's super simple!
 
+1. Clone the repository - `git clone https://github.com/smallblue2/Flask-Note-Web-App`
+2. Install the requirements - `pip install -r requirements.txt`
+3. Run the Flask app - `python main.py`
+4. Visit the app in your browser! - `http://localhost:5000`
